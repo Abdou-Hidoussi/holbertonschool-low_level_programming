@@ -1,4 +1,3 @@
-#include <unistd.h>
 /**
 *main - system call echo
 *
@@ -6,6 +5,6 @@
 */
 int main(void)
 {
-	write(1,"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",60);
-	return(1);
+	system("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	return (1);
 	}
