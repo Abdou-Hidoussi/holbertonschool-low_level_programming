@@ -5,11 +5,11 @@
 */
 int main(void)
 {
-	float i;
+	unsigned int i;
 
 	for (i = 0; i <= 9; ++i)
 	{
-		printf("%1f", i);
+		printf("%i", i);
 	}
 	putchar('\n');
 	return (0);
