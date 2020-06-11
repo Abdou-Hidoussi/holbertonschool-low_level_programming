@@ -5,9 +5,12 @@
 */
 int main(void)
 {
-	for (char i = '0'; i - 1 < '9'; ++i)
+	char i;
+	char j;
+
+	for (i = '0'; i - 1 < '9'; ++i)
 	{
-		for (char j = '0'; j - 1 < '9'; ++j)
+		for (j = '0'; j - 1 < '9'; ++j)
 		{
 			if (i != '0' || j != '0')
 			{
