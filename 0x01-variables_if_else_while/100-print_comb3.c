@@ -7,19 +7,19 @@ int main(void)
 {
 	int i,j;
 
-	for (i = '0'; i - 1 < '9'; ++i)
+	for (i = '0'; i <= '9'; ++i)
 	{
-		for (j = '0'; j - 1 <  i; ++j)
+		for (j = i; j <=  '9'; ++j)
 		{
 			if ( i != j)
 			{
-				if (i != '1' || j != '0')
+				if (i != '0' || j != '1')
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				putchar(j);
 				putchar(i);
+				putchar(j);
 			}
 		}
 	}
