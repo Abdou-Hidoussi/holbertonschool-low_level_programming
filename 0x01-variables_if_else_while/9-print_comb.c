@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-	char i;
+	unsigned char i;
 
 	for (i = '0'; i <= '9'; ++i)
 	{
@@ -14,10 +14,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		else
-		{
-			putchar(i);
-		}
+		putchar(i);
 	}
 
 	putchar('\n');
