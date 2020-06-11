@@ -14,13 +14,13 @@ int main(void)
 		{
 			if (i != '0' || j != '0')
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(",");
+				putchar(" ");
 			}
 			putchar(i);
 			putchar(j);
 		}
 	}
-	putchar('\n');
+	putchar("\n");
 	return (0);
 }
