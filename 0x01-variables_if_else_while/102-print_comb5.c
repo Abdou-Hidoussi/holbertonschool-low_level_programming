@@ -5,33 +5,28 @@
 */
 int main(void)
 {
-	unsigned int i1, i2, i3, i4;
+	unsigned int i1, i2;
 
-	for (i1 = '0'; i1 <= '9'; ++i1)
+	for (i1 = 0; i1 <= 99; ++i1)
 	{
-		for (i2 = '0'; i2 <= '9'; ++i2)
+		for (i2 = i1; i2 <= 99; ++i2)
 		{
-			for (i3 = i1; i3 <= '9'; ++i3)
+			if (i1 != i2)
 			{
-			for (i4 = i2; i4 <= '9'; ++i4)
-			{
-			if (i1 != i3 || i2 != i4)
-			{
-			if (i1 != '0' || i2 != '0' || i3 != '0' || i4 != '1')
-			{
-				putchar(',');
+				if (i1 != 0 || i2 != 1)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				putchar(i1 / 10 + '0');
+				putchar(i1 % 10 + '0');
 				putchar(' ');
-			}
-				putchar(i1);
-				putchar(i2);
-				putchar(' ');
-				putchar(i3);
-				putchar(i4);
-			}
-			}
+				putchar(i2 / 10 + '0');
+				putchar(i2 % 10 + '0');
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
