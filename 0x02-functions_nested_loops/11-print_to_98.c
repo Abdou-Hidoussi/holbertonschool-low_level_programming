@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /*
 *print_alphabet_x10 - 0
 *Return: nothing
