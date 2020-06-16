@@ -2,7 +2,8 @@
 
 void display(int a2, int b2, int c2,int i)
 {
-
+	if (i != 95)
+	{
 		if (a2 > 0)
 		{
 			printf("%d%07d%07d, ", a2, b2, c2);
@@ -15,7 +16,11 @@ void display(int a2, int b2, int c2,int i)
 		{
 			printf("%d, ", c2);
 		}		
-
+	}
+	else
+	{
+		printf("%d%07d%07d\n", a2, b2, c2);
+	}
 }
 
 
