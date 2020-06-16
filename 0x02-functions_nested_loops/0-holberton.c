@@ -1,6 +1,7 @@
 #include "holberton.h"
-/*
-*main - 0
+/**
+*main - main
+*
 *Return: 0
 */
 int main(void)
