@@ -8,18 +8,18 @@ int main()
 	z = 1;
 	j = 1;
 	t = z;
-	for (i = 3; j < 4000000; ++i)
+	i = 3;
+	while(j < 4000000)
 	{
-
 			j = j + t;
 			t = z;
 			z = j;
-			if (t % 2 == 1)
+			if (t % 2 != 0)
 			{
 				r += t;
-			}				
-			
+			}
+			i++;
 	}
-	printf("%lld\n",r + 1);
+	printf("%lld\n",r);
 	return (0);
 }
