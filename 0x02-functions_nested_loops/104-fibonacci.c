@@ -31,6 +31,7 @@ int main(void)
 {
 	int i = 0, a = 0, a1 = 0, a2 = 0, b = 0, b1 = 0, b2 = 0, c = 1, c1 = 1, c2 = 0;
 
+	printf("1 ,");
 	while (i <= 96)
 	{
 		if (c + c1 > 10000000)
