@@ -3,7 +3,7 @@
 int main()
 {
 	int i;
-	long long int j,z,t;
+	unsigned long int j,z,t;
 	
 	z = 1;
 	j = 1;
