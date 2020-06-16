@@ -4,9 +4,10 @@
 *
 *Return: 0
 */
-void main(void)
+int main(void)
 {
-	long int i, j;
+	int i;
+	long int j;
 
 	j = 0;
 	i = 0;
@@ -19,4 +20,5 @@ void main(void)
 		i++;
 	}
 	printf("%ld\n", j);
+	return (0);
 }
