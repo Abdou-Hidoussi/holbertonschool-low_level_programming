@@ -1,7 +1,8 @@
 #include "holberton.h"
-/*
-*print_alphabet_x10 - 0
-*Return: nothing
+/**
+*print_last_digit - 0
+*@n: integer
+*Return: digit
 */
 int print_last_digit(int n)
 {

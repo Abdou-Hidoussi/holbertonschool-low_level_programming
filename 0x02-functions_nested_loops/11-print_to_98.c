@@ -1,7 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
-/*
-*print_alphabet_x10 - 0
+/**
+*print_to_98 - 0
+*@n: integer
 *Return: nothing
 */
 void print_to_98(int n)

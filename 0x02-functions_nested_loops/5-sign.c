@@ -1,7 +1,8 @@
 #include "holberton.h"
-/*
-*print_alphabet_x10 - 0
-*Return: nothing
+/**
+*print_sign - 0
+*@n: integer
+*Return: 1 , 0 or -1
 */
 int print_sign(int n)
 {

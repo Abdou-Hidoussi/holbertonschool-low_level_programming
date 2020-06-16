@@ -1,7 +1,8 @@
 #include "holberton.h"
-/*
-*print_alphabet_x10 - 0
-*Return: nothing
+/**
+*_abs - 0
+*@n: integer
+*Return: abs n
 */
 int _abs(int n)
 {

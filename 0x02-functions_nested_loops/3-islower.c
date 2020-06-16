@@ -1,7 +1,8 @@
 #include "holberton.h"
-/*
-*print_alphabet_x10 - 0
-*Return: nothing
+/**
+*_islower - 0
+*@c: an intiger
+*Return: either 1 or 0
 */
 int _islower(int c)
 {

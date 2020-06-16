@@ -1,6 +1,8 @@
 #include "holberton.h"
-/*
-*print_alphabet_x10 - 0
+/**
+*add - 0
+*@a: integer
+*@b: integer
 *Return: nothing
 */
 int add(int a, int b)
