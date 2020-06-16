@@ -1,4 +1,10 @@
-int _islower(int c){
+#include "holberton.h"
+/*
+*print_alphabet_x10 - 0
+*Return: nothing
+*/
+int _islower(int c)
+{
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
@@ -8,4 +14,3 @@ int _islower(int c){
 		return (0);
 	}
 }
-
