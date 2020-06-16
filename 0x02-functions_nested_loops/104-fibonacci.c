@@ -2,7 +2,7 @@
 
 void display(int a2, int b2, int c2,int i)
 {
-	if (i != 95)
+	if (i != 96)
 	{
 		if (a2 > 0)
 		{
@@ -30,7 +30,7 @@ int main(void)
 	int i = 0, a = 0, a1 = 0, a2 = 0, b = 0, b1 = 0, b2 = 0, c = 1, c1 = 1, c2 = 0;
 
 	printf("1 ,");
-	while (i <= 95)
+	while (i <= 96)
 	{
 		if (c + c1 > 10000000)
 		{
