@@ -1,10 +1,14 @@
 #include <stdio.h>
-
-int main()
+/**
+*main - 0
+*
+*Return: 0
+*/
+int main(void)
 {
 	int i;
-	long int j,z,t;
-	
+	long int j, z, t;
+
 	z = 1;
 	j = 1;
 	t = z;
@@ -16,14 +20,14 @@ int main()
 			j = j + t;
 			printf("%ld, ", j);
 			t = z;
-			z = j;			
+			z = j;
 		}
 		else
 		{
 			j = j + t;
 			printf("%ld", j);
 			t = z;
-			z = j;				
+			z = j;
 		}
 
 	}
