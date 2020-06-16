@@ -19,7 +19,7 @@ int main(void)
 		z = j;
 		if (t % 2 != 0)
 		{
-			r += j;
+			r += t;
 		}
 		i++;
 	}
