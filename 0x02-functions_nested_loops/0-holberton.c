@@ -1,5 +1,8 @@
 #include "_putchar.c"
-
+/*
+*main - 0
+*Return: 0
+*/
 int main(void)
 {
 	_putchar('H');
