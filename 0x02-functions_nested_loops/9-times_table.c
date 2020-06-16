@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "_putchar.c"
 /*
 *print_alphabet_x10 - 0
 *Return: nothing
@@ -13,7 +14,7 @@ void times_table(void)
 		{
 			if (i * j > 9)
 			{
-				if (j != 9 && j != 0)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -23,7 +24,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (j != 9 && j != 0)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -35,4 +36,9 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
+}
+int main(void)
+{
+    times_table();
+    return (0);
 }
