@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /*
 *print_alphabet_x10 - 0
 *Return: nothing
@@ -36,9 +35,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}
-int main(void)
-{
-    times_table();
-    return (0);
 }
