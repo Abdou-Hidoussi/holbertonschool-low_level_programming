@@ -9,9 +9,9 @@ int main()
 	j = 1;
 	t = z;
 	printf("1, ");
-	for (i = 3; i < 50; ++i)
+	for (i = 3; i < 52; ++i)
 	{
-		if (i < 49)
+		if (i < 51)
 		{
 			j = j + t;
 			printf("%lld, ", j);
