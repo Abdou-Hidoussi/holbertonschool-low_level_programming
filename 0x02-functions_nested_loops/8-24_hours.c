@@ -1,4 +1,10 @@
-void jack_bauer(void){
+#include "holberton.h"
+/*
+*print_alphabet_x10 - 0
+*Return: nothing
+*/
+void jack_bauer(void)
+{
 	int i, j;
 
 	for (i = 0; i < 60; ++i)
