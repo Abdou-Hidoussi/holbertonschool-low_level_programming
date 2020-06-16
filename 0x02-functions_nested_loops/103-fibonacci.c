@@ -23,6 +23,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%ld\n", r);
+	printf("%ld\n", r + 1);
 	return (0);
 }
