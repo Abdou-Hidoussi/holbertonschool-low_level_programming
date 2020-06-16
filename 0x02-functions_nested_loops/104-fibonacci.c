@@ -1,19 +1,27 @@
 #include <stdio.h>
 
-void display(int a2, int b2, int c2)
+void display(int a2, int b2, int c2,int i)
 {
-	if (a2 > 0)
+	if (i != 96)
 	{
-		printf("%d%07d%07d, ", a2, b2, c2);
-	}
-	else if (b2 > 0)
-	{
-		printf("%d%07d, ", b2, c2);
+		if (a2 > 0)
+		{
+			printf("%d%07d%07d, ", a2, b2, c2);
+		}
+		else if (b2 > 0)
+		{
+			printf("%d%07d, ", b2, c2);
+		}
+		else
+		{
+			printf("%d, ", c2);
+		}		
 	}
 	else
 	{
-		printf("%d, ", c2);
+		printf("%d%07d%07d\n", a2, b2, c2);
 	}
+
 
 }
 
@@ -23,7 +31,7 @@ int main(void)
 {
 	int i = 0, a = 0, a1 = 0, a2 = 0, b = 0, b1 = 0, b2 = 0, c = 1, c1 = 1, c2 = 0;
 
-	while (i <= 98)
+	while (i <= 96)
 	{
 		if (c + c1 > 10000000)
 		{
@@ -34,13 +42,13 @@ int main(void)
 				a2 = (b + b1) / 10000000;
 				b2 += (b + b1) % 10000000;
 				a2 += a + a1;
-				display(a2, b2, c2);
+				display(a2, b2, c2, i);
 			}
 			else
 			{
 				b2 += b + b1;
 				a2 = a + a1;
-				display(a2, b2, c2);
+				display(a2, b2, c2, i);
 			}
 		}
 		else
@@ -51,13 +59,13 @@ int main(void)
 				a2 = (b + b1) / 10000000;
 				b2 = (b + b1) % 10000000;
 				a2 += a + a1;
-				display(a2, b2, c2);
+				display(a2, b2, c2, i);
 			}
 			else
 			{
 				b2 = b + b1;
 				a2 = a + a1;
-				display(a2, b2, c2);
+				display(a2, b2, c2, i);
 			}
 		}
 		c = c1;
@@ -68,6 +76,5 @@ int main(void)
 		a1 = a2;
 		i++;
 	}
-	printf("\n");
 	return (0);
 }
