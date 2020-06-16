@@ -1,4 +1,3 @@
-#include "_putchar.c"
 /*
 *main - 0
 *Return: 0
