@@ -3,16 +3,6 @@
 *time - 0
 *@i: int
 *@j: int
-*
-*table - 0
-*@n: int
-*
-*print_times_table - 0
-*@n: integer
-*Return: nothing
-*
-*
-*
 */
 void time(int i, int j)
 {
@@ -50,7 +40,10 @@ void time(int i, int j)
 		_putchar((i * j) + '0');
 	}
 }
-
+/**
+*table - 0
+*@n: int
+*/
 void table(int n)
 {
 	int i, j;
@@ -64,7 +57,11 @@ void table(int n)
 		_putchar('\n');
 	}
 }
-
+/**
+*print_times_table - 0
+*@n: integer
+*Return: nothing
+*/
 void print_times_table(int n)
 {
 	if (n < 15 && n > 0)
