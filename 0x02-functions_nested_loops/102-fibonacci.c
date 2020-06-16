@@ -8,7 +8,7 @@ int main()
 	z = 1;
 	j = 1;
 	t = z;
-	printf("1, 1, ");
+	printf("1, ");
 	for (i = 3; i < 50; ++i)
 	{
 		if (i < 49)
