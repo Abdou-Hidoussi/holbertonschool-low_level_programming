@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "_putchar.c"
 /**
 *time - 0
 *@i: int
@@ -50,7 +51,7 @@ void table(int n)
 
 	for (i = 0; i <= n; ++i)
 	{
-		for (j = 0; j <= 9; ++j)
+		for (j = 0; j <= n; ++j)
 		{
 			time(i, j);
 		}
@@ -68,4 +69,16 @@ void print_times_table(int n)
 	{
 		table(n);
 	}
+}
+
+int main(void)
+{
+    print_times_table(3);
+    _putchar('\n');
+    print_times_table(5);
+    _putchar('\n');
+    print_times_table(98);
+    _putchar('\n');
+    print_times_table(12);  
+    return (0);
 }
