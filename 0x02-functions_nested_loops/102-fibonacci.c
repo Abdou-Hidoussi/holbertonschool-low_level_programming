@@ -3,7 +3,7 @@
 int main()
 {
 	int i;
-	unsigned long int j,z,t;
+	long int j,z,t;
 	
 	z = 1;
 	j = 1;
@@ -14,14 +14,14 @@ int main()
 		if (i < 51)
 		{
 			j = j + t;
-			printf("%lld, ", j);
+			printf("%ld, ", j);
 			t = z;
 			z = j;			
 		}
 		else
 		{
 			j = j + t;
-			printf("%lld", j);
+			printf("%ld", j);
 			t = z;
 			z = j;				
 		}

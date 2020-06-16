@@ -3,7 +3,7 @@
 int main()
 {
 	int i;
-	long long int j,z,t,r;
+	long int j,z,t,r;
 	
 	z = 1;
 	j = 1;
@@ -20,6 +20,6 @@ int main()
 			}
 			i++;
 	}
-	printf("%lld\n",r);
+	printf("%ld\n",r);
 	return (0);
 }
