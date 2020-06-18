@@ -5,7 +5,7 @@
 */
 void print_triangle(int size)
 {
-	int i, j;
+	int i, j, h;
 
 	i = 0;
 	if (size > 0)
@@ -29,5 +29,8 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
