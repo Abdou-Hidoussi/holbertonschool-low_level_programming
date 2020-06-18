@@ -1,4 +1,4 @@
-#include "holberon.h"
+#include "holberton.h"
 /**
 *print_triangle - 0
 *@size: int

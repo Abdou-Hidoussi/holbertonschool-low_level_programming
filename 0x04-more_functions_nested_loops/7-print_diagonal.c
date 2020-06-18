@@ -1,4 +1,4 @@
-#include "holberon.h"
+#include "holberton.h"
 /**
 *print_diagonal - 0
 *@n: int
