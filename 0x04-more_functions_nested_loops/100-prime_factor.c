@@ -13,14 +13,14 @@ int main(void)
 	{
 		if (t % i == 0)
 		{
-			for (j = i; j <= 2; --j)
+			for (j = 2; j <= i / 2; ++j)
 			{
 				if (i % j == 0)
 				{
 					break;
 				}
 			}
-			if (j == 2)
+			if (j == i)
 			{
 				printf("%ld\n", i);
 				return (0);
