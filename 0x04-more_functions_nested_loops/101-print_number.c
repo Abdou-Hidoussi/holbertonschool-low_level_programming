@@ -6,12 +6,18 @@
 */
 void print_number(int n)
 {
-	int i;
+	int i, r;
 
 	i = n;
-	while (i > 9)
+	r = 0;	
+	while(i > 0)
 	{
-		_putchar(i % 10 + '0');
-		i /= 10;
+		r = (r*10) + (i%10);
+		i = i / 10;
+	}
+	while (r > 0)
+	{
+		_putchar(r % 10 + '0');
+		r = r / 10;
 	}
 }
