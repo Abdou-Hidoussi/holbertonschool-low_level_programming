@@ -1,13 +1,13 @@
 #include "holberton.h"
 /**
-*more_numbers - 0
+*print_line - 0
 *@n: int
 */
 void print_line(int n)
 {
 	int i;
 
-	i = 10;
+	i = 0;
 	if (n > 0)
 	{
 		while (i < n)
