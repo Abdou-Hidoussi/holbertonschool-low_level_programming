@@ -10,7 +10,7 @@ void print_triangle(int size)
 	i = 0;
 	if (size > 0)
 	{
-		while (i <= size)
+		while (i < size)
 		{
 			h = size - i;
 			while (h > 0)
@@ -20,7 +20,7 @@ void print_triangle(int size)
 			}
 
 			j = 0;
-			while (j < i)
+			while (j <= i)
 			{
 				_putchar('#');
 				j++;
