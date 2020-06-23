@@ -16,6 +16,8 @@ int _atoi(char *s)
 		{
 			signe *= -1;
 		}
+		while (*s >= '0' && *s <= '9')
+		{
 		if (*s >= '0' && *s <= '9')
 		{
 			switch (*s)
@@ -50,7 +52,12 @@ int _atoi(char *s)
 				case '9':
 				num = num * 10 + 9;
 				break;
-
+			}
+		}			
+			s++;
+			if (!(*s >= '0' && *s <= '9'))
+			{
+				return (num * signe);
 			}
 		}
 		s++;
