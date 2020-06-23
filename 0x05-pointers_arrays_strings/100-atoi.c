@@ -50,30 +50,25 @@ int incase(char *s, int num)
 int _atoi(char *s)
 {
 	int signe, num;
-	char *t;
 
 	signe = 1;
 	num = 0;
-
-
-
-		while (*s != '\0')
+	while (*s != '\0')
+	{
+		if (*s == '-')
 		{
-			if (*s == '-')
-			{
-				signe *= -1;
-			}
-			while (*s >= '0' && *s <= '9')
-			{
-				num = incase(s, num);
-				s++;
-				if (!(*s >= '0' && *s <= '9'))
-				{
-					return (num * signe);
-				}
-			}
-			s++;
+			signe *= -1;
 		}
-
+		while (*s >= '0' && *s <= '9')
+		{
+			num = incase(s, num);
+			s++;
+			if (!(*s >= '0' && *s <= '9'))
+			{
+				return (num * signe);
+			}
+		}
+		s++;
+	}
 	return (0);
 }
