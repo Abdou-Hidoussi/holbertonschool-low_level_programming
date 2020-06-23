@@ -5,7 +5,7 @@
 *@num: the current number
 *Return: the int
 */
-int incase(char *s, long int num)
+int incase(char *s, int num)
 {
 	switch (*s)
 	{
@@ -49,7 +49,7 @@ int incase(char *s, long int num)
 */
 int _atoi(char *s)
 {
-	long int signe, num;
+	int signe, num;
 
 	signe = 1;
 	num = 0;
