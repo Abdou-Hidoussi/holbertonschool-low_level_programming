@@ -1,25 +1,12 @@
 #include "holberton.h"
 /**
-*_atoi - convert string to int
+*incase - breaking the code into segment
 *@s: input string
+*@num: the current number
 *Return: the int
 */
-int _atoi(char *s)
+int incase(char *s,int num)
 {
-	int signe, num;
-
-	signe = 1;
-	num = 0;
-	while (*s != '\0')
-	{
-		if (*s == '-')
-		{
-			signe *= -1;
-		}
-		while (*s >= '0' && *s <= '9')
-		{
-		if (*s >= '0' && *s <= '9')
-		{
 			switch (*s)
 			{
 				case '0':
@@ -52,8 +39,29 @@ int _atoi(char *s)
 				case '9':
 				num = num * 10 + 9;
 				break;
-			}
-		}			
+		}
+		return (num);
+}
+/**
+*_atoi - convert string to int
+*@s: input string
+*Return: the int
+*/
+int _atoi(char *s)
+{
+	int signe, num;
+
+	signe = 1;
+	num = 0;
+	while (*s != '\0')
+	{
+		if (*s == '-')
+		{
+			signe *= -1;
+		}
+		while (*s >= '0' && *s <= '9')
+		{
+			num = incase(s,num);
 			s++;
 			if (!(*s >= '0' && *s <= '9'))
 			{
