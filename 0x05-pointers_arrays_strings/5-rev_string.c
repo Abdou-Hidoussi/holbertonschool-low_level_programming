@@ -23,6 +23,5 @@ void rev_string(char *s)
 		s[i] = s[j - i];
 		s[j - i] = c;
 		i++;
-		printf("%s\n", s);
 	}
 }
