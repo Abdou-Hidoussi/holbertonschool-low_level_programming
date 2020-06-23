@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "_putchar.c"
 /**
 *puts2 - 0
 *@str: char
@@ -11,11 +11,12 @@ void puts2(char *str)
 	i = 0;
 	while (*str != '\0')
 	{
-		if (i % 2 != 0)
+		if (i % 2 == 0)
 		{
 			_putchar(*str);
 		}
 		str++;
 		i++;
 	}
+	_putchar('\n');
 }
