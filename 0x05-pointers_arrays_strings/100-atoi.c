@@ -53,22 +53,26 @@ int _atoi(char *s)
 
 	signe = 1;
 	num = 0;
-	while (*s != '\0')
+	if (!s)
 	{
-		if (*s == '-')
+		while (*s != '\0')
 		{
-			signe *= -1;
-		}
-		while (*s >= '0' && *s <= '9')
-		{
-			num = incase(s, num);
-			s++;
-			if (!(*s >= '0' && *s <= '9'))
+			if (*s == '-')
 			{
-				return (num * signe);
+				signe *= -1;
 			}
+			while (*s >= '0' && *s <= '9')
+			{
+				num = incase(s, num);
+				s++;
+				if (!(*s >= '0' && *s <= '9'))
+				{
+					return (num * signe);
+				}
+			}
+			s++;
 		}
-		s++;
 	}
+
 	return (0);
 }
