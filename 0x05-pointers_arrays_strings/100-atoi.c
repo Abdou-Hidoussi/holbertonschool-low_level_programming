@@ -56,8 +56,7 @@ int _atoi(char *s)
 	num = 0;
 
 
-	if (s != t)
-	{
+
 		while (*s != '\0')
 		{
 			if (*s == '-')
@@ -75,6 +74,6 @@ int _atoi(char *s)
 			}
 			s++;
 		}
-	}
+
 	return (0);
 }
