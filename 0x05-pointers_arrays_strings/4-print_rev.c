@@ -8,7 +8,7 @@ void print_rev(char *s)
 {
 	char *f;
 
-	*f = *s;
+	f = s;
 	while (*s != '\0')
 	{
 		s++;
