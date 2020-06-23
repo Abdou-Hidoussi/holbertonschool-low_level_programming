@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "holberton.h"
 /**
 *puts2 - 0
 *@str: char
