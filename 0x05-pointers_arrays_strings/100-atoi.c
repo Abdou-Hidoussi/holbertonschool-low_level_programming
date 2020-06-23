@@ -5,7 +5,7 @@
 *@num: the current number
 *Return: the int
 */
-int incase(char *s,int num)
+int incase(char *s, int num)
 {
 			switch (*s)
 			{
@@ -61,7 +61,7 @@ int _atoi(char *s)
 		}
 		while (*s >= '0' && *s <= '9')
 		{
-			num = incase(s,num);
+			num = incase(s, num);
 			s++;
 			if (!(*s >= '0' && *s <= '9'))
 			{
