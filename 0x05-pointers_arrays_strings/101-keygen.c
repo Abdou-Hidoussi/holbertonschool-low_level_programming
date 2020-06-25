@@ -8,7 +8,7 @@ int main(void)
 	int i;
 
 	i = 0;
-	for (int i = 0; i < 33; ++i)
+	for (int i = 0; i <= 33; ++i)
 	{
 		printf("T");
 	}
