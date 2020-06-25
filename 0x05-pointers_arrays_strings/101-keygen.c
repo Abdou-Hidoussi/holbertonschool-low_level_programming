@@ -10,7 +10,7 @@ int main(void)
 	i = 0;
 	for (i = 0; i < 33; ++i)
 	{
-		printf("T");
+		putchar('T');
 	}
 	return (0);
 }
