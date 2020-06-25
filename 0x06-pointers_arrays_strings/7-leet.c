@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*string_toupper - 0
+*leet - 0
 *@r: string
 *Return: string
 *
@@ -30,10 +30,9 @@ char *leet(char *r)
 			r[i] == 'l' || r[i] == 'L' ||
 			r[i] == 't' || r[i] == 'T')
 		{
-			
 			r[i] = a[r[i]];
 		}
 		i++;
 	}
-	return r;
+	return (r);
 }
