@@ -5,6 +5,12 @@
 */
 int main(void)
 {
-	printf("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
+	int i;
+
+	i = 0;
+	for (int i = 0; i <= 33; ++i)
+	{
+		putchar('T');
+	}
 	return (0);
 }
