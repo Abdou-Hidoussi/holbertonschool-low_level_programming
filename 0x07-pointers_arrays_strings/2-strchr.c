@@ -19,6 +19,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
+	char *r = NULL;
 
-	return (NULL);
+	return (r);
 }
