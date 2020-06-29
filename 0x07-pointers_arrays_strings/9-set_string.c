@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
 *set_string - 0
 *@s: string
