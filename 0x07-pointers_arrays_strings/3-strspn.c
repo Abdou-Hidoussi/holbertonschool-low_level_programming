@@ -7,17 +7,18 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	unsigned int i, j, n;
 
+	n = 0;
 	j = 0;
 	while (s[j] != '\0')
 	{
 		i = 0;
 		while (s[i] == accept[i])
 		{
-			if (accept[i + 1] == '\0')
+			if (accept[i] == s[j])
 			{
-				return (i);
+				n += 1;
 			}
 			i++;
 		}
@@ -25,5 +26,5 @@ unsigned int _strspn(char *s, char *accept)
 	}
 
 
-	return ('\0');
+	return (n);
 }
