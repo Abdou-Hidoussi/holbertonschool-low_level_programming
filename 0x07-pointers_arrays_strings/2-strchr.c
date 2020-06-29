@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 *_strchr - 0
 *@s: string
@@ -18,8 +19,6 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	char *r;
 
-	r = 0;
-	return (r);
+	return (NULL);
 }
