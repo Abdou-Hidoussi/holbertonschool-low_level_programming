@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 *print_diagsums - 0
 *@a: table
@@ -7,18 +8,13 @@
 */
 void print_diagsums(int *a, int size)
 {
-	long int i, n;
+	int i;
+	long long int n;
 
 	n = 0;
-	for (i = 0; i < size; ++i)
+	for (i = 1; i < size; ++i)
 	{
 		n += a[i][i];
 	}
-
-	while (n > 9)
-	{
-		_putchar(n / 10 + '0');
-		n %= 10;
-	}
-	_putchar(n);
+	printf("%lli\n", n);
 }
