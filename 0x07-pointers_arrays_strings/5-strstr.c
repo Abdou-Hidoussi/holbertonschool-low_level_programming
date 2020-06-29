@@ -7,12 +7,12 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	if (needle[0] == '\0')
+	int i, j;
+
+	if (needle[0] == '\0' || haystack[0] == '\0')
 	{
 		return (haystack);
 	}
-
-	int i, j;
 
 	i = 0;
 	while (haystack[i] != '\0')
