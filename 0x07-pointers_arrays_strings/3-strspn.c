@@ -16,10 +16,10 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	if (i > 0)
 	{
-		return(i);
+		return (i);
 	}
 	else
 	{
-		return(NULL);
+		return (NULL);
 	}
 }
