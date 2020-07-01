@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* no - the true square
+*no - the true square
 *@i: counter
 *@n: the square
 * Return: int
