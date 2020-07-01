@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*factorial - 0
+*_pow_recursion - 0
 *@x: int
 *@y: int
 *Return: int
