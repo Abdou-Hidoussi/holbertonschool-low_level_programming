@@ -5,9 +5,9 @@
 *@n: the square
 *Return: int
 */
-int no(int n, int i)
+int no(long int n, long int i)
 {
-if (i > n / 3)
+if (i*i > n)
 {
 return (-1);
 }
