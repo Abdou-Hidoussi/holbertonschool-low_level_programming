@@ -7,7 +7,7 @@
 */
 int no(int n, int i)
 {
-if (i <= 0)
+if (i > n / 2)
 {
 return (-1);
 }
@@ -15,7 +15,7 @@ if (i * i == n)
 {
 return (i);
 }
-return (no(n, i - 1));
+return (no(n, i + 1));
 }
 /**
 *_sqrt_recursion - the true square
@@ -28,5 +28,9 @@ if (n == 0)
 {
 return (0);
 }
-return (no(n, n));
+if (n < 0)
+{
+return (-1);
+}
+return (no(n, 0));
 }
