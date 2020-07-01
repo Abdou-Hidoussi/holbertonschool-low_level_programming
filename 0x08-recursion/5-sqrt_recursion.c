@@ -7,7 +7,7 @@
 */
 int no(int n, int i)
 {
-if (i <= 2)
+if (i < 0)
 {
 return (-1);
 }
