@@ -7,7 +7,7 @@
 */
 int no(long int n, long int i)
 {
-if (i*i > n)
+if (i * i > n)
 {
 return (-1);
 }
