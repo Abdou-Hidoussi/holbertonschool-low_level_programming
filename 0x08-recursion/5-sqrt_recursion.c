@@ -15,7 +15,7 @@ if (i * i == n)
 {
 return (i);
 }
-return (no(n, i - 1));
+return (no(n,(n / 2) - 1));
 }
 /**
 *_sqrt_recursion - the true square
