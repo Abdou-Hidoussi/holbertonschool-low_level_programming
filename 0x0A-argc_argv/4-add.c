@@ -9,23 +9,27 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, r;
+	int i, j, r;
 
 	i = 1;
 	r = 0;
 	while (i < argc)
 	{
-		if (!(*argv[i] >= '0' && *argv[i] <= '9'))
+		j = 0;
+		while (j < argv[i][j])
 		{
-			printf("Error\n");
-			return (1);
+			if (!(*argv[i][j] >= '0' && *argv[i][j] <= '9'))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				r += atoi(argv[i]);
+				j++;
+			}
 		}
-		else
-		{
-			r += atoi(argv[i]);
-			i++;
-		}
-
+		i++;
 	}
 	printf("%d\n", r);
 	return (0);
