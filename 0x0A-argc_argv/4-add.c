@@ -11,17 +11,21 @@ int main(int argc, char *argv[])
 {
 	int i, r;
 
-	if (argc < 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
 	i = 1;
 	r = 0;
 	while (i < argc)
 	{
-		r += atoi(argv[i]);
-		i++;
+		if (atoi(argv[i]) >= '0' && atoi(argv[i]) <= '9')
+		{
+			r += atoi(argv[i]);
+			i++;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+
 	}
 	printf("%d\n", r);
 	return (0);
