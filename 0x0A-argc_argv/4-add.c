@@ -11,16 +11,11 @@ int main(int argc, char *argv[])
 {
 	int i, r;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
 	i = 1;
 	r = 0;
 	while (i < argc)
 	{
-		if (!(atoi(argv[i]) >= '0' && atoi(argv[i]) <= '9'))
+		if (!(*argv[i] >= '0' && *argv[i] <= '9'))
 		{
 			r += atoi(argv[i]);
 			i++;
