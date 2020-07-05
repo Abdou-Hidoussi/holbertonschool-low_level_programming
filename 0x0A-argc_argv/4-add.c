@@ -9,24 +9,21 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, r;
 
-	i = 1;
-	r = 0;
-	while (i < argc)
+int i;
+unsigned int sum = 0;
+
+for (i = 1; i < argc; i++)
+{
+	if (*argv[i] >= 48 && *argv[i] <= 57)
+		sum += atoi(argv[i]);
+	else
 	{
-		if (*argv[i] >= '0' && *argv[i] <= '9')
-		{
-			r += atoi(argv[i]);
-			i++;
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", r);
-	return (0);
+}
+printf("%d\n", sum);
+
+return (sum);
 }
