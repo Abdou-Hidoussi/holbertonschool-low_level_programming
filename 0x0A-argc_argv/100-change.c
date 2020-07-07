@@ -20,7 +20,8 @@ int main(int argc, char *argv[])
 	cent = atoi(argv[1]);
 	if (cent <= 0)
 	{
-		return (0);
+		printf("0\n");
+		return (1);
 	}
 	while (cent > 0)
 	{
