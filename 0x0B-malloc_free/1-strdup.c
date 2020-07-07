@@ -26,14 +26,14 @@ char *_strdup(char *str)
 	}
 
 
-	p = malloc(i * sizeof(char));
+	p = malloc(i + 1 * sizeof(char));
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 
 	j = 0;
-	while (j < i)
+	while (j <= i)
 	{
 		p[j] = str[j];
 		j++;
