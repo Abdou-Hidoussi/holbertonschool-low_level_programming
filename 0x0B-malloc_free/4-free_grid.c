@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid - allocate a grid
- * @width: width of the grid
+ * free_grid - clear a grid
+ * @grid: the grid to clear
  * @height: height of the grid
  *
- * Return: pointer to grid.
  */
 void free_grid(int **grid, int height)
 {
