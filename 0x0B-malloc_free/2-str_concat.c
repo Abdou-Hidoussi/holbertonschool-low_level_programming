@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	if (s1 != NULL)
+	if (s2 != NULL)
 	{
 		while (s2[j])
 		{
