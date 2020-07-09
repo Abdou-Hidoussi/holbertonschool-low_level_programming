@@ -4,7 +4,7 @@
 /**
  * malloc_checked - 0
  * @b: unsigned int
- * Return 98 in case of error
+ * Return: 98 in case of error
  */
 void *malloc_checked(unsigned int b)
 {
