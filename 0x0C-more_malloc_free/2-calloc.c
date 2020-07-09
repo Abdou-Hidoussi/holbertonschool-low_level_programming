@@ -26,11 +26,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		p[i] = malloc(size);
 		if (p[i] == NULL)
 		{
-			for (j = 0; j <= i; ++j)
-			{
-				free(p[j]);
-			}
-			free(p);
 			return (NULL);
 		}
 	}
