@@ -1,7 +1,12 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+/**
+ * array_range - 0
+ * @min: min
+ * @max: max
+ * Return: array
+ */
 int *array_range(int min, int max)
 {
 	int *p;
