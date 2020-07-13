@@ -38,12 +38,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	if (name)
 	{
-		for (t = 0; t <= i; ++t)
+		for (t = 0; t <= i + 1; ++t)
 			(*d).name[t] = name[t];
 	}
 	if (owner)
 	{
-		for (t = 0; t <= j; ++t)
+		for (t = 0; t <= j + 1; ++t)
 			(*d).owner[j] = owner[j];
 	}
 	(*d).age = age;
