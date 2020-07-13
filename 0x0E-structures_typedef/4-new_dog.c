@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free((*d).name);
 		free(d);
-		return (NULL);*
+		return (NULL);
 	}
 	if ((*d).name)
 		for (i = 0; name[i] != '\0'; ++i)
