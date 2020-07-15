@@ -5,6 +5,7 @@
 *@array: array
 *@size: size of array
 *@cmp: a function
+*Return: int
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -14,7 +15,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; ++i)
 		{
-			if((*cmp)(array[i]))
+			if ((*cmp)(array[i]))
 				return (i);
 		}
 	}
