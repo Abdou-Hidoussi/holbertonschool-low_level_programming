@@ -8,12 +8,16 @@
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0;
+	unsigned int i = 0, len = 0;
 	char *s;
 	va_list ap;
 
+	while (format[len] != '\0')
+	{
+		len++;
+	}
 	va_start(ap, format);
-	while (format && format[i])
+	while (i < len)
 	{
 		switch (format[i])
 		{
