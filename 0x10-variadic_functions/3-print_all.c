@@ -30,9 +30,17 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(ap, double));
 				break;
 			case 's':
-				printf("%s", va_arg(ap, char*));
+				s = va_arg(ap, char*);
+				if (s)
+					printf("%s", s);
+				else
+					printf("(nil)");
+				break;
+			default:
 				break;
 		}
+		if (format[i + 1])
+			printf(", ");
 		i++;
 	}
 	printf("\n");
