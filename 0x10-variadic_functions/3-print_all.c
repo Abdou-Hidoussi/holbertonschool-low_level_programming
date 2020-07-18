@@ -8,8 +8,8 @@
 */
 void print_all(const char * const format, ...)
 {
-	char *s = "";
-	unsigned int len = 0, i = 0;
+	unsigned int len = 0, i = 0, j = 0;
+	char *s;
 	va_list ap;
 
 	while (format[len] != '\0')
@@ -19,6 +19,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, 0);
 	while (i < len)
 	{
+		j = 0;
 		switch (format[i])
 		{
 			case 'c':
@@ -38,11 +39,12 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 				break;
 			default:
+				j = 1;
 				break;
 		}
-		if (format[i + 1])
-			printf(", ");
 		i++;
+		if (j != 1 && format[i])
+			printf(", ");
 	}
 	printf("\n");
 	va_end(ap);
