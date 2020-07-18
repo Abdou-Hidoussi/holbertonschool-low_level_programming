@@ -8,7 +8,7 @@
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int len = 0, i = 0, j = 0;
+	unsigned int len = 0, i = 0;
 	char *s;
 	va_list ap;
 
@@ -19,7 +19,6 @@ void print_all(const char * const format, ...)
 	va_start(ap, 0);
 	while (i < len)
 	{
-		j = 0;
 		switch (format[i])
 		{
 			case 'c':
@@ -39,7 +38,6 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 				break;
 			default:
-				j = 1;
 				break;
 		}
 		i++;
