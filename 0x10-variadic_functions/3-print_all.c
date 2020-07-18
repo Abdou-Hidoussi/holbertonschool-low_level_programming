@@ -8,8 +8,7 @@
 */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	unsigned int len = 0;
+	unsigned int len = 0, i = 0;
 	va_list ap;
 
 	while (format[len] != '\0')
