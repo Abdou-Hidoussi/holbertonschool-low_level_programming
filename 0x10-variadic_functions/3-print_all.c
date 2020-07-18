@@ -43,8 +43,6 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		i++;
-		if (j != 1 && format[i])
-			printf(", ");
 	}
 	printf("\n");
 	va_end(ap);
