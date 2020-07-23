@@ -9,14 +9,17 @@
 */
 void free_list(list_t *h)
 {
-	struct list_s *next = (*h).next;
+	list_t *next;
 
-	while (next != NULL)
+	while (h != NULL)
 	{
 		next = (*h).next;
+		free((*h).next);
 		free((*h).str);
 		free(h);
 		h = next;
-		next = (*h).next;
 	}
+	free((*next).next);
+	free((*next).str);
+	free(next);
 }
