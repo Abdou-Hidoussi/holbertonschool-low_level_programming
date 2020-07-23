@@ -17,13 +17,10 @@ void free_list(list_t *h)
 		free((*h).str);
 		free(h);
 		if (next == NULL)
-		{
 			h = NULL;
-		}
 		else
-		{
 			h = next;
-		}
 	}
+	free(h);
 	free(next);
 }
