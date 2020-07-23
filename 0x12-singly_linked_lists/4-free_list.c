@@ -16,6 +16,7 @@ void free_list(list_t *h)
 		next = (*h).next;
 		free((*h).str);
 		free(h);
+		free((*h).next);
 		h = next;
 	}
 }
