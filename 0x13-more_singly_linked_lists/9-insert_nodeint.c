@@ -35,7 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int idx, int n)
 	if (idx == 0)
 	{
 		(*next).n = n;
-		(*next).next = (*head).next;
+		(*next).next = head;
 		head = next;
 	}
 	else
