@@ -5,9 +5,9 @@
 /**
 *free_listint - 0
 *
-*@head: listint_t
+*@h: listint_t
 */
-void free_listint(listint_t *head)
+void free_listint(listint_t *h)
 {
 	listint_t *next;
 
