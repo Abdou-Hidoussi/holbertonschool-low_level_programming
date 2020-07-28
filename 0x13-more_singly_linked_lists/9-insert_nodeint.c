@@ -32,8 +32,17 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
-	(*next).n = n;
-	(*next).next = (*head).next;
-	(*head).next = next;
+	if (idx == 0)
+	{
+		(*next).n = n;
+		(*next).next = (*head).next;
+		head = next;
+	}
+	else
+	{
+		(*next).n = n;
+		(*next).next = (*head).next;
+		(*head).next = next;
+	}
 	return ((*head).next);
 }
