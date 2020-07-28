@@ -29,5 +29,5 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int idx, int n)
 	(*next).n = n;
 	(*next).next = (*head).next;
 	(*head).next = next;
-	return (next);
+	return ((*head).next);
 }
