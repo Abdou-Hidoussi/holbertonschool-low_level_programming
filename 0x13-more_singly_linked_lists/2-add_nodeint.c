@@ -3,23 +3,6 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-*listint_len - 0
-*@h: list
-*Return:: i
-*/
-
-size_t listint_len(const listint_t *h)
-{
-	int  i = 0;
-
-	while (h != NULL)
-	{
-		h = (*h).next;
-		i++;
-	}
-	return (i);
-}
-/**
 *add_nodeint - 0
 *
 *@head: list_t
