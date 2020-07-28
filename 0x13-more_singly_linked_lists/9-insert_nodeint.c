@@ -28,7 +28,7 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int idx, int n)
 	{
 		head = (*head).next;
 	}
-	if (head == NULL || idx - 1 < 0)
+	if (head == NULL || idx == 0)
 	{
 		return (NULL);
 	}
