@@ -42,8 +42,16 @@ unsigned int binary_to_uint(const char *b)
 	int len = _strlen(b), i;
 	unsigned int sum;
 
+	if (!b)
+	{
+		return (0);
+	}
 	for (i = 0; i < len; ++i)
 	{
+		if (b[i] != '1' && b[i] != '0')
+		{
+			return (0);
+		}
 		if (b[i] == '1')
 		{
 			sum += _pow(len - i - 1);
