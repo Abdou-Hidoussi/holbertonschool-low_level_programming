@@ -9,7 +9,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int i = 0;
 
-	while(!n && !m)
+	while(n || m)
 	{
 		if ((n & 1) != (m & 1))
 		{
