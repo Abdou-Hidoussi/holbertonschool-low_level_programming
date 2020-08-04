@@ -21,14 +21,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	c = malloc(sizeof(char) * letters);
 	file = open(filename, O_RDONLY);
-	if (file == NULL)
+	if (file == 0)
 	{
 		return (0);
 	}
 	a = read(file, c, letters);
 	close(file);
 	b = write(1, c, letters);
-	if (b == NULL)
+	if (b == 0)
 	{
 		return (0);
 	}
