@@ -1,6 +1,6 @@
-#include <fcntl.h> 
+#include <fcntl.h>
 #include <stdio.h>
-#include <unistd.h> 
+#include <unistd.h>
 #include <stdlib.h>
 #include "holberton.h"
 /**
@@ -13,22 +13,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *c;
 	int file;
-	long unsigned int a, b;
+	unsigned long int a, b;
 
-	if (!filename)
+	if (filename == NULL)
 	{
 		return (0);
 	}
 	c = malloc(sizeof(char) * letters);
 	file = open(filename, O_RDONLY);
-	if (!file)
+	if (file == NULL)
 	{
 		return (0);
 	}
-	a = read(file,c,letters);
+	a = read(file, c, letters);
 	close(file);
-	b = write(1,c,letters);
-	if (!b)
+	b = write(1, c, letters);
+	if (b == NULL)
 	{
 		return (0);
 	}
