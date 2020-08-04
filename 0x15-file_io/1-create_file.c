@@ -11,18 +11,17 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int file, i;
-	unsigned long int a;
+	int file, i, a;
 
 	if (!filename)
 		return (-1);
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	if (!file)
+	if (file == -1)
 		return (-1);
 	for (i = 0; text_content[i]; ++i)
 		;
 	a = write(file, text_content, i);
-	if (!a)
+	if (a == -1)
 		return (-1);
 	return (1);
 }
