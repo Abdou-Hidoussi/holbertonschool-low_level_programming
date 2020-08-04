@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
-*create_file - 0
+*append_text_to_file - 0
 *@filename: filename
 *@text_content: content
 *Return: int
