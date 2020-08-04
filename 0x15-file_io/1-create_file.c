@@ -20,6 +20,8 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	for (i = 0; text_content[i]; ++i)
 		;
+	if (!text_content)
+		return (1);
 	a = write(file, text_content, i);
 	if (a == -1)
 		return (-1);
