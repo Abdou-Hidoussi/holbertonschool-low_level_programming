@@ -7,7 +7,7 @@
 *
 *@h: dlistint_t
 */
-void free_dlistint(dlistint_t *head)
+void free_dlistint(dlistint_t *h)
 {
 	dlistint_t *next;
 
