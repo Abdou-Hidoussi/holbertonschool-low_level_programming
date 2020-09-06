@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-*delete_nodeint_at_index - 0
+*delete_dnodeint_at_index - 0
 *
 *@head: dlistint_t
 *
-*@idx: int
+*@index: int
 *
 *Return: int
 */
