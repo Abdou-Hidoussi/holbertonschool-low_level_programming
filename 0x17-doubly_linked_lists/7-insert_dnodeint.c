@@ -38,6 +38,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 	unsigned int i = 0;
 	dlistint_t *new, *h;
 
+	if (head == NULL && idx != 0)
+	{
+		return (NULL);
+	}
+	if (idx > dlistint_len(*head))
+	{
+		return (NULL);
+	}
 	if (idx == 0)
 	{
 		new = add_dnodeint(head, n);
