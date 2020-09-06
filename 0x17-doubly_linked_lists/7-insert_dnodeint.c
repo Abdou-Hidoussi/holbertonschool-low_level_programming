@@ -52,20 +52,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 	{
 		new = add_dnodeint_end(&h, n);
 	}
-	while (h)
-	{
-		if (i == idx)
-		{
-			(*new).prev = h;
-			(*new).next = (*h).next;
-			(*new).n = n;
-			a = (*h).next;
-			(*a).prev = new;
-			(*h).next = new;
-			return (new);
-		}
-		i++;
-		h = (*h).next;
-	}
 	return (new);
 }
