@@ -58,8 +58,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 		{
 			(*new).n = n;
 			(*new).prev = h;
-			(*new).next = (*h).next;
-			(*h).next = new;
+			if (h != NULL)
+			{
+				(*new).next = (*h).next;
+				(*h).next = new;
+			}
+			else
+			{
+				(*new).prev = NULL;
+			}
 			return (new);
 		}
 		i++;
