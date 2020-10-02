@@ -2,6 +2,7 @@
 #define HASH
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct hash_node_s - holberton
