@@ -1,4 +1,6 @@
 #include "hash_tables.h"
+#include <string.h>
+
 /**
  * hash_table_set - 0
  * @ht: int
