@@ -3,7 +3,7 @@
 
 /**
  * hash_table_set - 0
- * @ht: int
+ * @ht: hash_table_t
  * @key: int
  * @value: int
  * Return: 0 if failed 1 if success
