@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def island_perimeter(grid):
+"""
+par
+"""
     num = 0
     for i in grid:
         if 1 in i:
