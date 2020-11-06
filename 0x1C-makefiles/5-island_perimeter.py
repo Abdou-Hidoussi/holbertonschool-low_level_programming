@@ -4,7 +4,7 @@
 
 def island_perimeter(grid):
     """Return the perimiter of an island."""
-    if grid == []:
+    if grid == [] or grid is None:
         return 0
     num = 0
     for i in grid:
