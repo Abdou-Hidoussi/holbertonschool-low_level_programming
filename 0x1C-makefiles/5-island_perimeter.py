@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""Defines an island perimeter."""
+
 def island_perimeter(grid):
-"""
-par
-"""
+    """Return the perimiter of an island."""
     num = 0
     for i in grid:
         if 1 in i:
